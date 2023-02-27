@@ -2,16 +2,16 @@ body {
   display: flex;
   font-family: "Sofia Sans Extra Condensed", sans-serif;
   letter-spacing: 0.8px;
-  margin: 0 80px;
+  margin: 0 140px;
 }
 
 .image-section {
   display: flex;
   flex-direction: column;
   background-image: url("mainpic.jpg");
-  background-size: 500px 1070px;
-  height: 100vh;
-  width: 400px;
+  background-size: inherit;
+  height: 770px;
+  width: 360px;
   justify-content: space-between;
   align-items: center;
 }
@@ -50,6 +50,7 @@ a {
 .action {
   font-size: 24px;
   font-weight: 500;
+  padding: 20px;
 }
 
 .form {
@@ -60,14 +61,23 @@ a {
 .text-section {
   display: flex;
   flex-direction: column;
-  gap: 50px;
-  margin: 40px;
+  gap: 20px;
+  background-color: #f9f2ec;
+  width: 100%;
 }
 
 .description {
   width: 500px;
   font-size: 24px;
   font-weight: 500;
+  margin: 80px 0 0 20px;
+}
+
+.forms {
+  width: 100%;
+  background-color: white;
+  box-shadow: 0px 5px 7px #edd7c5;
+  padding: 10px 0;
 }
 
 .forms-block {
@@ -77,8 +87,9 @@ a {
   align-items: center;
   justify-content: center;
   font-size: 12px;
-  max-width: 360px;
+  max-width: 400px;
   gap: 20px;
+  padding: 10px 0;
 }
 
 button {
@@ -86,15 +97,16 @@ button {
   background-color: #ffccb3;
   border-radius: 4px;
   padding: 4px;
-  width: 86px;
+  width: 180px;
+  height: 40px;
+  color: white;
+  font-size: 20px;
+  font-weight: 900;
 }
 
 button,
-input,
-select,
-textarea {
+input {
   font-family: inherit;
-  font-size: 100%;
 }
 
 input {
@@ -110,8 +122,17 @@ input[type="email"]:valid {
   background-color: rgba(139, 195, 74, 0.25);
 }
 
-button:active {
+button:hover {
   background-color: #ffbb99;
+}
+
+button:active {
+  background-color: #ffaa80;
+}
+
+.login {
+  font-size: 18px;
+  font-weight: bolder;
 }
 
 .login-link {
@@ -119,10 +140,15 @@ button:active {
   font-weight: bold;
 }
 
+button,
+.login {
+  margin-left: 20px;
+}
+
 input:valid,
 input[type="email"]:valid {
   border: 1px solid #66cc00;
-  border-radius: 4px;
+  border-radius: inherit;
   background-color: rgba(230, 255, 179, 0.25);
 }
 
@@ -130,4 +156,8 @@ input:focus:invalid {
   border: 1px solid #ff6666;
   background-color: rgba(255, 179, 179, 0.25);
   border-radius: inherit;
+}
+
+input:focus {
+  box-shadow: 0px 5px 7px #edd7c5;
 }

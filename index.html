@@ -38,79 +38,76 @@
         <p>Sign up <strong>now</strong> to get started.</p>
         <p>You <strong>know</strong> you want to.</p>
       </div>
-      <span class="action">Let's do this!</span>
+
       <form novalidate>
-        <div class="forms-block">
-          <div>
+        <div class="forms">
+          <span class="action">Let's do this!</span>
+          <div class="forms-block">
+            <div>
+              <div class="form">
+                <label for="first-name">FIRST NAME *</label>
+                <input
+                  id="fist-name"
+                  name="first-name"
+                  type="text"
+                  value=""
+                  pattern="^[^0-9]+$"
+                  required
+                />
+              </div>
+            </div>
             <div class="form">
-              <label for="first-name">FIRST NAME *</label>
+              <label for="last-name">LAST NAME *</label>
               <input
-                id="fist-name"
-                name="first-name"
+                id="last-name"
+                name="last-name"
                 type="text"
                 value=""
+                maxlength="30"
                 pattern="^[^0-9]+$"
                 required
               />
             </div>
-          </div>
-          <div class="form">
-            <label for="last-name">LAST NAME *</label>
-            <input
-              id="last-name"
-              name="last-name"
-              type="text"
-              value=""
-              maxlength="30"
-              pattern="^[^0-9]+$"
-              required
-            />
-          </div>
-          <div class="form">
-            <label for="email">EMAIL *</label>
-            <input
-              id="email"
-              name="email"
-              type="text"
-              pattern="[a-zA-Z0-9\\_\\-\\.]+)@([a-zA-Z]+).(.+)"
-              required
-            />
-          </div>
+            <div class="form">
+              <label for="email">EMAIL *</label>
+              <input id="email" name="email" type="email" required />
+            </div>
 
-          <div class="form">
-            <label for="phone-number">PHONE NUMBER *</label>
-            <input
-              id="phone-number"
-              name="phone-number"
-              type="tel"
-              value="+7"
-              pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$"
-              required
-            />
-          </div>
+            <div class="form">
+              <label for="phone-number">PHONE NUMBER *</label>
+              <input
+                id="phone-number"
+                name="phone-number"
+                type="tel"
+                value="+7"
+                pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$"
+                required
+              />
+            </div>
 
-          <div class="form">
-            <label for="password">PASSWORD *</label>
-            <input
-              id="password"
-              name="password"
-              type="password"
-              value=""
-              pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
-              required
-            />
-          </div>
+            <div class="form">
+              <label for="password">PASSWORD *</label>
+              <input
+                id="password"
+                name="password"
+                type="password"
+                value=""
+                pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
+                required
+              />
+            </div>
 
-          <div class="form">
-            <label for="confirm-password">COMFIRM PASSWORD *</label>
-            <input
-              id="confirm-password"
-              name="confirm-password"
-              type="password"
-              value=""
-              pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
-              required
-            />
+            <div class="form">
+              <label for="confirm-password">COMFIRM PASSWORD *</label>
+              <input
+                id="confirm-password"
+                name="confirm-password"
+                type="password"
+                value=""
+                pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
+                required
+              />
+            </div>
           </div>
         </div>
       </form>
