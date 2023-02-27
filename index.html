@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Sofia+Sans+Extra+Condensed:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Sign-Up</title>
+  </head>
+  <body>
+    <div class="image-section">
+      <div class="logo">
+        <img class="odin-logo" src="odin-lined.png" alt="odin logo" /> ODIN
+      </div>
+      <span class="photo-author"
+        >Photo by
+        <a
+          href="https://unsplash.com/@dav_billings?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+          >David Billings</a
+        >
+
+        <a
+          href="https://unsplash.com/photos/p8BM14LpLF0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+          >Unsplash</a
+        ></span
+      >
+    </div>
+    <div class="text-section">
+      <div class="description">
+        This is not a real online service! You know you need something like this
+        in your life to help you realize your deepest dreams.
+        <p>Sign up <strong>now</strong> to get started.</p>
+        <p>You <strong>know</strong> you want to.</p>
+      </div>
+      <span class="action">Let's do this!</span>
+      <form novalidate>
+        <div class="forms-block">
+          <div>
+            <div class="form">
+              <label for="first-name">FIRST NAME *</label>
+              <input
+                id="fist-name"
+                name="first-name"
+                type="text"
+                value=""
+                pattern="^[^0-9]+$"
+                required
+              />
+            </div>
+          </div>
+          <div class="form">
+            <label for="last-name">LAST NAME *</label>
+            <input
+              id="last-name"
+              name="last-name"
+              type="text"
+              value=""
+              maxlength="30"
+              pattern="^[^0-9]+$"
+              required
+            />
+          </div>
+          <div class="form">
+            <label for="email">EMAIL *</label>
+            <input
+              id="email"
+              name="email"
+              type="text"
+              pattern="[a-zA-Z0-9\\_\\-\\.]+)@([a-zA-Z]+).(.+)"
+              required
+            />
+          </div>
+
+          <div class="form">
+            <label for="phone-number">PHONE NUMBER *</label>
+            <input
+              id="phone-number"
+              name="phone-number"
+              type="tel"
+              value="+7"
+              pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$"
+              required
+            />
+          </div>
+
+          <div class="form">
+            <label for="password">PASSWORD *</label>
+            <input
+              id="password"
+              name="password"
+              type="password"
+              value=""
+              pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
+              required
+            />
+          </div>
+
+          <div class="form">
+            <label for="confirm-password">COMFIRM PASSWORD *</label>
+            <input
+              id="confirm-password"
+              name="confirm-password"
+              type="password"
+              value=""
+              pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
+              required
+            />
+          </div>
+        </div>
+      </form>
+
+      <button type="submit">Create account</button>
+      <div class="login">
+        Already have an account?
+        <a href="https://www.theodinproject.com/sign_in" class="login-link"
+          >Log in</a
+        >
+      </div>
+    </div>
+  </body>
+</html>
