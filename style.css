@@ -1,3 +1,11 @@
+/* @font-face {
+  font-family: norse-bold;
+  src: url(Norse-Bold.otf);
+} */
+*:focus {
+  outline: none;
+}
+
 body {
   display: flex;
   font-family: "Sofia Sans Extra Condensed", sans-serif;
@@ -9,26 +17,25 @@ body {
   display: flex;
   flex-direction: column;
   background-image: url("mainpic.jpg");
-  background-size: inherit;
-  height: 770px;
-  width: 360px;
+  background-size: 440px 100vh;
+  height: 100vh;
+  width: 640px;
   justify-content: space-between;
   align-items: center;
 }
 
 .logo {
   display: flex;
-  font-family: "Alumni Sans Pinstripe", sans-serif;
-  font-size: 86px;
-  font-weight: 900;
-  color: beige;
-  background-color: grey;
-  opacity: 40%;
+  font-family: "Cormorant Garamond", serif;
+  /* font-family: norse-bold; */
+  font-size: 76px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.25);
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 160px;
-  margin-top: 200px;
+  height: 140px;
+  margin-top: 146px;
 }
 
 .odin-logo {
@@ -49,13 +56,14 @@ a {
 
 .action {
   font-size: 24px;
-  font-weight: 500;
+  font-weight: 800;
   padding: 20px;
 }
 
 .form {
   display: flex;
   flex-direction: column;
+  letter-spacing: 1.5px;
 }
 
 .text-section {
@@ -64,13 +72,13 @@ a {
   gap: 20px;
   background-color: #f9f2ec;
   width: 100%;
+  flex-shrink: none;
 }
 
 .description {
-  width: 500px;
+  padding: 80px 200px 0 20px;
   font-size: 24px;
   font-weight: 500;
-  margin: 80px 0 0 20px;
 }
 
 .forms {
@@ -94,7 +102,7 @@ a {
 
 button {
   border: none;
-  background-color: #ffccb3;
+  background-color: #ffbb99;
   border-radius: 4px;
   padding: 4px;
   width: 180px;
@@ -112,10 +120,12 @@ input {
 input {
   width: 160px;
   font-family: "Sofia Sans Extra Condensed", sans-serif;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
   font-weight: bolder;
   font-size: larger;
   padding: 0 3px;
+  border-radius: 4px;
+  border: 1px solid grey;
 }
 
 input[type="email"]:valid {
@@ -123,11 +133,11 @@ input[type="email"]:valid {
 }
 
 button:hover {
-  background-color: #ffbb99;
+  background-color: #ffaa80;
 }
 
 button:active {
-  background-color: #ffaa80;
+  background-color: #ff9966;
 }
 
 .login {
@@ -148,15 +158,17 @@ button,
 input:valid,
 input[type="email"]:valid {
   border: 1px solid #66cc00;
-  border-radius: inherit;
   background-color: rgba(230, 255, 179, 0.25);
 }
 
 input:focus:invalid {
   border: 1px solid #ff6666;
-  background-color: rgba(255, 179, 179, 0.25);
-  border-radius: inherit;
 }
+
+/* input:invalid {
+  border: 1px solid #ff6666;
+  background-color: rgba(255, 179, 179, 0.25);
+} */
 
 input:focus {
   box-shadow: 0px 5px 7px #edd7c5;
