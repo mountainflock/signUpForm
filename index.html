@@ -51,7 +51,7 @@
                   name="first-name"
                   type="text"
                   value=""
-                  pattern="^[^0-9]+$"
+                  pattern="^\p{Alpha}+$"
                   required
                 />
               </div>
@@ -64,7 +64,7 @@
                 type="text"
                 value=""
                 maxlength="30"
-                pattern="^[^0-9]+$"
+                pattern="^\p{Alpha}+$"
                 required
               />
             </div>
@@ -86,7 +86,7 @@
                 name="phone-number"
                 type="tel"
                 value="+7"
-                pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$"
+                pattern="^\+[1-9][0-9]{10,}$"
                 required
               />
             </div>
@@ -104,7 +104,7 @@
             </div>
 
             <div class="form">
-              <label for="confirm-password">COMFIRM PASSWORD*</label>
+              <label for="confirm-password">CONFIRM PASSWORD*</label>
               <input
                 id="confirm-password"
                 name="confirm-password"
